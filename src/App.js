@@ -9,11 +9,7 @@ class App extends Component {
     return (
       <div>
         <ButtonAppBar />
-        <div className="cards">
-          <MediaCard />
-          <MediaCard />
-          <MediaCard />
-        </div>
+        <MediaCard />
         <SimpleTable />
       </div>
     );

@@ -21,11 +21,17 @@
 }
 
 .card-unit {
-  width: 25%;
+  /* width: 25%; */
+  /* min-width: 200px; */
+  height: 100%;
 }
 
 .card-unit button {
   width: 100%;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 @keyframes App-logo-spin {
