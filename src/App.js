@@ -3,7 +3,10 @@ import ButtonAppBar from "./components/ButtonAppBar";
 import SimpleTable from "./components/SimpleTable";
 import EnhancedTable from "./components/EnhancedTable";
 import MediaCard from "./components/MediaCard";
+import CustomTable from "./components/CustomTable";
 import "./App.css";
+
+
 
 class App extends Component {
   render() {
@@ -13,6 +16,7 @@ class App extends Component {
         <MediaCard />
         <SimpleTable />
         <EnhancedTable />
+        <CustomTable />
       </div>
     );
   }

@@ -132,7 +132,7 @@ let EnhancedTableToolbar = props => {
   const { numSelected, classes } = props;
 
   return (
-    <Toolbar  style={{"backgroundColor":"#3eac51"}}
+    <Toolbar style={{"backgroundColor":"#3eac51"}}
       className={classNames(classes.root, {
         [classes.highlight]: numSelected > 0,
       })}
@@ -143,7 +143,7 @@ let EnhancedTableToolbar = props => {
             {numSelected} selected
           </Typography>
         ) : (
-          <Typography variant="title" id="tableTitle" style={{"color":"#fff"}}>
+          <Typography variant="title" id="tableTitle" style={{"color":"#fff", "fontSize":"0.9rem"}}>
             Онлайн-таблица
           </Typography>
         )}

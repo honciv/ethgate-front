@@ -6,7 +6,6 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 const CustomTableCell = withStyles(theme => ({
@@ -63,13 +62,13 @@ function CustomizedTable(props) {
           <TableHead>
             <TableRow>
               {/* <CustomTableCell>ID</CustomTableCell> */}
-              <CustomTableCell style={{ "fontSize": "1rem" }}>
+              <CustomTableCell style={{ "fontSize": "0.9rem" }}>
                 Номер телефона
               </CustomTableCell>
-              <CustomTableCell style={{ "fontSize": "1rem" }}>
+              <CustomTableCell style={{ "fontSize": "0.9rem" }}>
                 Адрес кошелька
               </CustomTableCell>
-              <CustomTableCell style={{ "fontSize": "1rem" }} numeric>
+              <CustomTableCell style={{ "fontSize": "0.9rem" }} numeric>
                 Текущий баланс
               </CustomTableCell>
             </TableRow>
