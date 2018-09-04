@@ -5,15 +5,15 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import TemporaryDrawer from "./TemporaryDrawer";
-import TextField from "@material-ui/core/TextField";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import SearchIcon from "@material-ui/icons/Search";
+// import TextField from "@material-ui/core/TextField";
+// import InputAdornment from "@material-ui/core/InputAdornment";
+// import SearchIcon from "@material-ui/icons/Search";
 import green from "@material-ui/core/colors/green";
 import Grid from "@material-ui/core/Grid";
 import {
   withStyles,
-  MuiThemeProvider,
-  createMuiTheme
+  // MuiThemeProvider,
+  // createMuiTheme
 } from "@material-ui/core/styles";
 
 const styles = theme => ({
@@ -36,11 +36,11 @@ const styles = theme => ({
   }
 });
 
-const theme = createMuiTheme({
-  palette: {
-    primary: green
-  }
-});
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: green
+//   }
+// });
 
 function ButtonAppBar(props) {
   const { classes } = props;
@@ -75,45 +75,7 @@ function ButtonAppBar(props) {
               />
               <Typography variant="title" className={classes.flex} />
 
-              <form className={classes.container} noValidate autoComplete="off">
-                <MuiThemeProvider theme={theme}>
-                  <TextField
-                    id="search"
-                    label="Поиск"
-                    type="search"
-                    className={classes.textField}
-                    margin="normal"
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start">
-                          <SearchIcon />
-                        </InputAdornment>
-                      )
-                    }}
-                  />
-                  {/* <TextField
-                    defaultValue="react-bootstrap"
-                    label="Bootstrap"
-                    id="bootstrap-input"
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start">
-                          <SearchIcon />
-                        </InputAdornment>
-                      ),
-                      disableUnderline: true,
-                      classes: {
-                        root: classes.bootstrapRoot,
-                        input: classes.bootstrapInput
-                      }
-                    }}
-                    InputLabelProps={{
-                      shrink: true,
-                      className: classes.bootstrapFormLabel
-                    }}
-                  /> */}
-                </MuiThemeProvider>
-              </form>
+
 
               <Button>Login</Button>
             </Toolbar>
