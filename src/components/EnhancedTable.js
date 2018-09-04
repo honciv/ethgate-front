@@ -89,6 +89,7 @@ class EnhancedTableHead extends React.Component {
           }, this)}
         </TableRow>
       </TableHead>
+      
     );
   }
 }
@@ -268,7 +269,7 @@ class EnhancedTable extends React.Component {
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, data.length - page * rowsPerPage);
 
     return (
-      <Paper className={classes.root}  style={{"width": "92%", "margin": "auto", "margin-top": "2rem"}}>
+      <Paper className={classes.root}  style={{"width": "92%", "margin": "auto", "marginTop": "2rem", "marginBottom": "2rem"}}>
         <EnhancedTableToolbar numSelected={selected.length} />
         <div className={classes.tableWrapper}>
           <Table className={classes.table} aria-labelledby="tableTitle">
