@@ -58,7 +58,7 @@ function CustomizedTable(props) {
 
   return (
     <Grid container spacing={24} style={{ "justifyContent": "center" }}>
-      <Grid item xs={11} s={10} md={11}>
+      <Grid item xs={11} s={10} md={11} style={{overflowX: "auto"}}>
         <Table className={classes.table}>
           <TableHead>
             <TableRow>
